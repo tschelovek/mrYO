@@ -1,0 +1,70 @@
+*, *::before, *::after
+  margin: 0
+  +box
+
+body
+  background-color: white
+  color: $black
+  font-family: Muller, sans-serif
+
+ul
+  margin: 0
+  padding: 0
+  list-style: none
+
+a
+  text-decoration: none
+
+input[type="number"].no-arrows
+  -moz-appearance: textfield
+  &::-webkit-outer-spin-button, &::-webkit-inner-spin-button
+    -webkit-appearance: none
+    margin: 0
+
+.btn
+  border: none
+  font-family: Muller, sans-serif
+  &_violet
+    padding: 23px 53px
+    color: white
+    font-size: $f20
+    border: 2px solid $violet
+    background-color: $violet
+    +border-radius(35px)
+    cursor: pointer
+    transition: background-color 0.3s ease-in-out, border 0.3s ease-in-out
+    &:focus
+      outline: none
+    &:hover
+      border: 2px solid $lightViolet
+      background-color: $lightViolet
+    &:focus-visible
+      border: 2px solid $darkViolet
+      background-color: $lightViolet
+      transition: background-color 0.1s, border 0.1s
+    &:active
+      border: 2px solid $darkViolet
+      background-color: $darkViolet
+      transition: background-color 0.1s, border 0.1s
+  &_play
+    background-color: transparent
+    cursor: pointer
+
+.container
+  padding: 0 30px
+  margin: 0 auto
+  max-width: 1260px
+  width: 100%
+  &_body
+    position: relative
+    overflow: hidden
+  &_fullHD
+    padding: 0 55px
+    margin: 0 auto
+    max-width: 1920px
+    width: 100%
+
+.bg
+  &_black
+    background-color: $black
+    color: white

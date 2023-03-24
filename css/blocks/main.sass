@@ -1,0 +1,48 @@
+.advantages
+  &__list
+    display: flex
+    gap: 80px
+  &__item
+    padding: 20px 0
+
+.sales
+  &__list
+    display: flex
+    flex-flow: wrap
+    column-gap: 30px
+    row-gap: 48px
+  &__item
+    position: relative
+    min-height: 400px
+    -webkit-border-radius: 50px
+    -moz-border-radius: 50px
+    border-radius: 50px
+    overflow: hidden
+    &_big
+      padding: 48px 60px
+      flex: 3
+      max-width: 688px
+      min-width: 520px
+    &_small
+      padding: 48px 50px
+      flex: 2
+      max-width: 482px
+      min-width: 320px
+    &__img-wrapper
+      position: absolute
+      top: 0
+      bottom: 0
+      left: 0
+      right: 0
+      overflow: hidden
+      z-index: -1
+      img
+        //width: 100%
+    &__text
+      color: white
+      .title_h3
+        font-family: 'Jost', sans-serif
+        font-style: normal
+        font-weight: 600
+        font-size: 42px
+        line-height: 1.25
