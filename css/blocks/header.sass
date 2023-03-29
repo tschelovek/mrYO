@@ -1,0 +1,112 @@
+.header
+  &__top
+    padding: 20px 0
+    background-color: $lightGrey
+    border-bottom-left-radius: 80px
+    border-bottom-right-radius: 80px
+    &__list
+      margin-left: 168px
+      display: flex
+      justify-content: space-between
+      gap: 20px
+    &__link, .header__top__link span
+      font-family: 'Jost', sans-serif
+      font-style: normal
+      font-weight: 300
+      font-size: 16px
+      line-height: 1.4
+      color: $darkBlue
+  &__bottom
+    margin-top: -60px
+    display: flex
+    align-items: baseline
+  &__navigation
+    display: flex
+    flex: 1
+    &__list
+      margin-left: 66px
+      display: flex
+      justify-content: space-between
+      align-items: center
+      gap: 16px
+      flex: 1
+    &__link
+      font-family: 'Jost', sans-serif
+      font-style: normal
+      font-weight: 500
+      font-size: 14px
+      letter-spacing: 0.08em
+      text-transform: uppercase
+    &__controls
+      margin-left: 48px
+      display: flex
+      align-items: center
+      gap: 16px
+  &__search
+    &__btn
+      padding: 8px 16px
+      background-color: white
+      &:hover
+        svg path
+          fill: $darkBlue
+          transition: fill 0.3s ease-in-out
+
+.cart
+  padding: 8px 12px
+  display: flex
+  //height: 50px
+  align-items: center
+  -webkit-border-radius: 25px
+  -moz-border-radius: 25px
+  border-radius: 25px
+  &__link
+    +center()
+    width: 34px
+    height: 34px
+    -webkit-border-radius: 50%
+    -moz-border-radius: 50%
+    border-radius: 50%
+    background-color: $pink
+    transition: background-color 0.2s ease-in-out
+    &:hover
+      background-color: $darkBlue
+  &__info
+    margin-left: 16px
+    padding-left: 16px
+    border-left: 1px solid #E0E0E0
+    font-family: 'Jost', sans-serif
+    font-style: normal
+    font-weight: 500
+    font-size: 14px
+    line-height: 20px
+    letter-spacing: 0.08em
+    text-transform: uppercase
+
+.logo
+  &_header
+    overflow: hidden
+    &__img
+      max-width: 100%
+
+.contacts
+  &__item
+    padding-left: 30px
+    position: relative
+    &::before
+      position: absolute
+      top: 0
+      left: 0
+    &_address
+      &::before
+        content: url("../images/icons/geo.svg")
+    &_email
+      &::before
+        content: url("../images/icons/mail.svg")
+    &_phone
+      .header__top__link
+        font-weight: 400
+      &::before
+        content: url("../images/icons/phone.svg")
+    &_time
+      &::before
+        content: url("../images/icons/clock.svg")

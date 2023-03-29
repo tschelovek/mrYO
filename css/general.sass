@@ -4,7 +4,7 @@
 
 body
   background-color: white
-  color: $black
+  color: $darkBlue
   font-family: Muller, sans-serif
 
 ul
@@ -21,9 +21,43 @@ input[type="number"].no-arrows
     -webkit-appearance: none
     margin: 0
 
+input:focus
+  outline: none
+
+.visually-hidden
+  position: absolute
+  width: 1px
+  height: 1px
+  margin: -1px
+  border: 0
+  padding: 0
+  white-space: nowrap
+  clip-path: inset(100%)
+  clip: rect(0 0 0 0)
+  overflow: hidden
+
 .btn
   border: none
   font-family: Muller, sans-serif
+  cursor: pointer
+  &_round
+    padding: 0 30px
+    display: inline-flex
+    align-items: center
+    justify-content: center
+    gap: 16px
+    height: 60px
+    -webkit-border-radius: 30px
+    -moz-border-radius: 30px
+    border-radius: 30px
+    text-transform: uppercase
+    font-family: 'Jost', sans-serif
+    font-style: normal
+    font-weight: 500
+    font-size: 12px
+    line-height: 1.5
+    letter-spacing: 0.08em
+
   &_violet
     padding: 23px 53px
     color: white
@@ -46,9 +80,14 @@ input[type="number"].no-arrows
       border: 2px solid $darkViolet
       background-color: $darkViolet
       transition: background-color 0.1s, border 0.1s
-  &_play
-    background-color: transparent
-    cursor: pointer
+  &_dark-blue
+    background-color: $darkBlue
+    color: white
+  &_pink
+    background-color: $pink
+    color: white
+    font-size: 14px
+    gap: 10px
 
 .container
   padding: 0 30px
@@ -68,3 +107,15 @@ input[type="number"].no-arrows
   &_black
     background-color: $black
     color: white
+  &_grey
+    background-color: $lightGrey
+
+.title
+  &_h2
+    margin-bottom: 52px
+    color: $darkBlue
+    font-family: 'Jost', sans-serif
+    font-style: normal
+    font-weight: 600
+    font-size: 52px
+    line-height: 1.2
