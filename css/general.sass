@@ -40,6 +40,50 @@ input:focus
   border: none
   font-family: Muller, sans-serif
   cursor: pointer
+  &__burger
+    padding: 0
+    position: relative
+    display: none
+    align-items: center
+    justify-content: center
+    width: 28px
+    height: 20px
+    font-size: 0
+    background-color: inherit
+    border: none
+    z-index: 20
+    &:focus
+      outline: none
+    &:focus-visible
+      outline: $darkBlue
+    span
+      display: block
+      width: 100%
+      height: 2px
+      background-color: $darkBlue
+      transition: transform 0.3s, background-color 0.3s ease-out
+    span::before, span::after
+      content: ''
+      position: absolute
+      right: 0
+      display: block
+      width: 100%
+      height: 2px
+      background-color: $darkBlue
+      transition: transform 0.3s ease-in-out
+    span::before
+      top: 0
+    span::after
+      bottom: 0
+    &.active span
+      background-color: transparent
+    &.active span::before
+      transform: rotate(45deg)
+      top: 9px
+    &.active span::after
+      transform: rotate(-45deg)
+      bottom: 9px
+
   &_round
     padding: 0 30px
     display: inline-flex
@@ -57,7 +101,16 @@ input:focus
     font-size: 12px
     line-height: 1.5
     letter-spacing: 0.08em
-
+  &_vk
+    padding: 12px
+    background-color: white
+    color: $darkBlue
+    font-family: 'Jost', sans-serif
+    font-weight: 500
+    font-size: 14px
+    line-height: 20px
+    letter-spacing: 0.08em
+    text-transform: uppercase
   &_violet
     padding: 23px 53px
     color: white
@@ -115,7 +168,11 @@ input:focus
     margin-bottom: 52px
     color: $darkBlue
     font-family: 'Jost', sans-serif
-    font-style: normal
     font-weight: 600
     font-size: 52px
     line-height: 1.2
+  &_h3
+    font-family: 'Jost', sans-serif
+    font-weight: 600
+    font-size: 42px
+    line-height: 1.25

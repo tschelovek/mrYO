@@ -8,17 +8,17 @@
   <meta name="theme-color" content="#E6E8EC">
   <title>Title</title>
   <link rel="stylesheet" href="./css/style.min.css">
-<!--  <link rel="stylesheet"-->
-<!--    href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"-->
-<!--  />-->
-<!--  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>-->
+  <!--  <link rel="stylesheet"-->
+  <!--    href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"-->
+  <!--  />-->
+  <!--  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>-->
 
   <script defer type="module" src="./js/swiper-bundle.min.js"></script>
   <script defer type="module" src="./js/index.js"></script>
-<!--  <script defer type="module" src="./dist/main.js"></script>-->
-<!--  <script type="text/javascript" src="//yastatic.net/s3/front-maps-static/maps-front-maps/build/client/map-widget/chunks/map-widget-app/a6e759c7c6e0ce6038f1.yandex.ru.js" id="map-widget-app" crossorigin="anonymous" charset="UTF-8" data-log="chunk_map_widget_app" defer="">-->
-<!--  </script>-->
-<!--  <script type="text/javascript" data-src="//yastatic.net/s3/front-maps-static/maps-front-maps/build/client/map-widget/d7cc3a59d593c619edcd.yandex.ru.js" id="map-widget" nonce="" crossorigin="anonymous" charset="UTF-8">(()=>{"use strict";var e,t,a,r,o,n,i={9676:(e,t,a)=>{function r(){try{return"localStorage"in window&&Boolean(window.localStorage)}catch(e){return!1}}function o(e){console.error(e)}a.d(t,{Z:()=>n});const n={set:function(e,t){if(r())try{if(!/^[a-z_\d]+$/.test(e))throw new Error("Invalid localStorage key name: "+e);window.localStorage.setItem("maps_"+e,JSON.stringify(t))}catch(a){o(a)}},get:function(e){if(!r())return null;try{var t=window.localStorage.getItem("maps_"+e);return t&&JSON.parse(t)}catch(a){return o(a),null}},remove:function(e){if(r())try{window.localStorage.removeItem("maps_"+e)}catch(t){o(t)}}}},5589:(e,t,a)=>{var r=a(9676),o=window.document.querySelector("#font-faces"),n=r.Z.get("fonts")||[];function i(){a.e("map-widget-base").then(a.bind(a,2206))}n.length>0&&(o.innerHTML=n.map((function(e){return'@font-face {\n font-family: "Yandex Sans Text";\n font-weight: '+e.weight+';\n src: url("data:font/woff;base64,'+e.base64+'") format("woff");\n }'})).join(""),window._maps_internal_fontsLoaded=!0,window.document.body&&window.document.body.classList.add("_font_loaded"));var d=window.document.getElementById("react");"React"in window?i():d&&(d.onload=i),window.setTimeout((function(){return window.location.reload()}),864e5)},7363:e=>{e.exports=React},1533:e=>{e.exports=ReactDOM}},d={};function f(e){var t=d[e];if(void 0!==t)return t.exports;var a=d[e]={exports:{}};return i[e].call(a.exports,a,a.exports,f),a.exports}f.m=i,f.n=e=>{var t=e&&e.__esModule?()=>e.default:()=>e;return f.d(t,{a:t}),t},t=Object.getPrototypeOf?e=>Object.getPrototypeOf(e):e=>e.__proto__,f.t=function(a,r){if(1&r&&(a=this(a)),8&r)return a;if("object"==typeof a&&a){if(4&r&&a.__esModule)return a;if(16&r&&"function"==typeof a.then)return a}var o=Object.create(null);f.r(o);var n={};e=e||[null,t({}),t([]),t(t)];for(var i=2&r&&a;"object"==typeof i&&!~e.indexOf(i);i=t(i))Object.getOwnPropertyNames(i).forEach((e=>n[e]=()=>a[e]));return n.default=()=>a,f.d(o,n),o},f.d=(e,t)=>{for(var a in t)f.o(t,a)&&!f.o(e,a)&&Object.defineProperty(e,a,{enumerable:!0,get:t[a]})},f.f={},f.e=e=>Promise.all(Object.keys(f.f).reduce(((t,a)=>(f.f[a](e,t),t)),[])),f.u=e=>"build/client/map-widget/chunks/"+e+"/"+{"map-widget-base":"a7ec17f461682a847783","map-widget-panorama-player-app":"c0c42fa732153698a471","map-widget-app":"a6e759c7c6e0ce6038f1","map-widget-panorama-player-banner":"950190d3229dbef7e1d5",ymaps:"8f6dc898fe8c1cf6e28f","ymaps-vector":"b7fdea1101b168e6c6d0",tooltip:"9bc634d19989eb879693","lang-switcher":"ef6ff63a7e662370b454","logo-view":"f3502ad4d2109ad2e8e4",mrc:"44811c0ae951f83b29c6",flyover:"a92ba960ee1cb606db38","stories-preview":"e964f0fdb1609beebf1f"}[e]+".yandex.ru.js",f.miniCssF=e=>"build/client/map-widget/chunks/"+e+"/"+{"map-widget-base":"a7ec17f461682a847783","map-widget-panorama-player-app":"c0c42fa732153698a471","map-widget-app":"a6e759c7c6e0ce6038f1","map-widget-panorama-player-banner":"950190d3229dbef7e1d5",ymaps:"8f6dc898fe8c1cf6e28f",tooltip:"9bc634d19989eb879693","lang-switcher":"ef6ff63a7e662370b454","logo-view":"f3502ad4d2109ad2e8e4",flyover:"a92ba960ee1cb606db38","stories-preview":"e964f0fdb1609beebf1f"}[e]+".css",f.o=(e,t)=>Object.prototype.hasOwnProperty.call(e,t),a={},r="maps:",f.l=(e,t,o,n)=>{if(a[e])a[e].push(t);else{var i,d;if(void 0!==o)for(var l=document.getElementsByTagName("script"),c=0;c<l.length;c++){var s=l[c];if(s.getAttribute("src")==e||s.getAttribute("data-webpack")==r+o){i=s;break}}i||(d=!0,(i=document.createElement("script")).charset="utf-8",i.timeout=120,f.nc&&i.setAttribute("nonce",f.nc),i.setAttribute("data-webpack",r+o),i.src=e,0!==i.src.indexOf(window.location.origin+"/")&&(i.crossOrigin="anonymous")),a[e]=[t];var p=(t,r)=>{i.onerror=i.onload=null,clearTimeout(u);var o=a[e];if(delete a[e],i.parentNode&&i.parentNode.removeChild(i),o&&o.forEach((e=>e(r))),t)return t(r)},u=setTimeout(p.bind(null,void 0,{type:"timeout",target:i}),12e4);i.onerror=p.bind(null,i.onerror),i.onload=p.bind(null,i.onload),d&&document.head.appendChild(i)}},f.r=e=>{"undefined"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(e,"__esModule",{value:!0})},f.p="//yastatic.net/s3/front-maps-static/maps-front-maps/",o=e=>new Promise(((t,a)=>{var r=f.miniCssF(e),o=f.p+r;if(((e,t)=>{for(var a=document.getElementsByTagName("link"),r=0;r<a.length;r++){var o=(i=a[r]).getAttribute("data-href")||i.getAttribute("href");if("stylesheet"===i.rel&&(o===e||o===t))return i}var n=document.getElementsByTagName("style");for(r=0;r<n.length;r++){var i;if((o=(i=n[r]).getAttribute("data-href"))===e||o===t)return i}})(r,o))return t();((e,t,a,r)=>{var o=document.createElement("link");o.rel="stylesheet",o.type="text/css",o.onerror=o.onload=n=>{if(o.onerror=o.onload=null,"load"===n.type)a();else{var i=n&&("load"===n.type?"missing":n.type),d=n&&n.target&&n.target.href||t,f=new Error("Loading CSS chunk "+e+" failed.\n("+d+")");f.code="CSS_CHUNK_LOAD_FAILED",f.type=i,f.request=d,o.parentNode.removeChild(o),r(f)}},o.href=t,0!==o.href.indexOf(window.location.origin+"/")&&(o.crossOrigin="anonymous"),document.head.appendChild(o)})(e,o,t,a)})),n={"map-widget":0},f.f.miniCss=(e,t)=>{n[e]?t.push(n[e]):0!==n[e]&&{"map-widget-base":1,"map-widget-panorama-player-app":1,"map-widget-app":1,"map-widget-panorama-player-banner":1,ymaps:1,tooltip:1,"lang-switcher":1,"logo-view":1,flyover:1,"stories-preview":1}[e]&&t.push(n[e]=o(e).then((()=>{n[e]=0}),(t=>{throw delete n[e],t})))},(()=>{f.b=document.baseURI||self.location.href;var e={"map-widget":0};f.f.j=(t,a)=>{var r=f.o(e,t)?e[t]:void 0;if(0!==r)if(r)a.push(r[2]);else{var o=new Promise(((a,o)=>r=e[t]=[a,o]));a.push(r[2]=o);var n=f.p+f.u(t),i=new Error;f.l(n,(a=>{if(f.o(e,t)&&(0!==(r=e[t])&&(e[t]=void 0),r)){var o=a&&("load"===a.type?"missing":a.type),n=a&&a.target&&a.target.src;i.message="Loading chunk "+t+" failed.\n("+o+": "+n+")",i.name="ChunkLoadError",i.type=o,i.request=n,r[1](i)}}),"chunk-"+t,t)}};var t=(t,a)=>{var r,o,[n,i,d]=a,l=0;if(n.some((t=>0!==e[t]))){for(r in i)f.o(i,r)&&(f.m[r]=i[r]);if(d)d(f)}for(t&&t(a);l<n.length;l++)o=n[l],f.o(e,o)&&e[o]&&e[o][0](),e[o]=0},a=self.__LOADABLE_LOADED_CHUNKS__=self.__LOADABLE_LOADED_CHUNKS__||[];a.forEach(t.bind(null,0)),a.push=t.bind(null,a.push.bind(a))})();f(5589)})();</script>-->
+  <!--  <script defer type="module" src="./dist/main.js"></script>-->
+  <!--  <script type="text/javascript" src="//yastatic.net/s3/front-maps-static/maps-front-maps/build/client/map-widget/chunks/map-widget-app/a6e759c7c6e0ce6038f1.yandex.ru.js" id="map-widget-app" crossorigin="anonymous" charset="UTF-8" data-log="chunk_map_widget_app" defer="">-->
+  <!--  </script>-->
+  <!--  <script type="text/javascript" data-src="//yastatic.net/s3/front-maps-static/maps-front-maps/build/client/map-widget/d7cc3a59d593c619edcd.yandex.ru.js" id="map-widget" nonce="" crossorigin="anonymous" charset="UTF-8">(()=>{"use strict";var e,t,a,r,o,n,i={9676:(e,t,a)=>{function r(){try{return"localStorage"in window&&Boolean(window.localStorage)}catch(e){return!1}}function o(e){console.error(e)}a.d(t,{Z:()=>n});const n={set:function(e,t){if(r())try{if(!/^[a-z_\d]+$/.test(e))throw new Error("Invalid localStorage key name: "+e);window.localStorage.setItem("maps_"+e,JSON.stringify(t))}catch(a){o(a)}},get:function(e){if(!r())return null;try{var t=window.localStorage.getItem("maps_"+e);return t&&JSON.parse(t)}catch(a){return o(a),null}},remove:function(e){if(r())try{window.localStorage.removeItem("maps_"+e)}catch(t){o(t)}}}},5589:(e,t,a)=>{var r=a(9676),o=window.document.querySelector("#font-faces"),n=r.Z.get("fonts")||[];function i(){a.e("map-widget-base").then(a.bind(a,2206))}n.length>0&&(o.innerHTML=n.map((function(e){return'@font-face {\n font-family: "Yandex Sans Text";\n font-weight: '+e.weight+';\n src: url("data:font/woff;base64,'+e.base64+'") format("woff");\n }'})).join(""),window._maps_internal_fontsLoaded=!0,window.document.body&&window.document.body.classList.add("_font_loaded"));var d=window.document.getElementById("react");"React"in window?i():d&&(d.onload=i),window.setTimeout((function(){return window.location.reload()}),864e5)},7363:e=>{e.exports=React},1533:e=>{e.exports=ReactDOM}},d={};function f(e){var t=d[e];if(void 0!==t)return t.exports;var a=d[e]={exports:{}};return i[e].call(a.exports,a,a.exports,f),a.exports}f.m=i,f.n=e=>{var t=e&&e.__esModule?()=>e.default:()=>e;return f.d(t,{a:t}),t},t=Object.getPrototypeOf?e=>Object.getPrototypeOf(e):e=>e.__proto__,f.t=function(a,r){if(1&r&&(a=this(a)),8&r)return a;if("object"==typeof a&&a){if(4&r&&a.__esModule)return a;if(16&r&&"function"==typeof a.then)return a}var o=Object.create(null);f.r(o);var n={};e=e||[null,t({}),t([]),t(t)];for(var i=2&r&&a;"object"==typeof i&&!~e.indexOf(i);i=t(i))Object.getOwnPropertyNames(i).forEach((e=>n[e]=()=>a[e]));return n.default=()=>a,f.d(o,n),o},f.d=(e,t)=>{for(var a in t)f.o(t,a)&&!f.o(e,a)&&Object.defineProperty(e,a,{enumerable:!0,get:t[a]})},f.f={},f.e=e=>Promise.all(Object.keys(f.f).reduce(((t,a)=>(f.f[a](e,t),t)),[])),f.u=e=>"build/client/map-widget/chunks/"+e+"/"+{"map-widget-base":"a7ec17f461682a847783","map-widget-panorama-player-app":"c0c42fa732153698a471","map-widget-app":"a6e759c7c6e0ce6038f1","map-widget-panorama-player-banner":"950190d3229dbef7e1d5",ymaps:"8f6dc898fe8c1cf6e28f","ymaps-vector":"b7fdea1101b168e6c6d0",tooltip:"9bc634d19989eb879693","lang-switcher":"ef6ff63a7e662370b454","logo-view":"f3502ad4d2109ad2e8e4",mrc:"44811c0ae951f83b29c6",flyover:"a92ba960ee1cb606db38","stories-preview":"e964f0fdb1609beebf1f"}[e]+".yandex.ru.js",f.miniCssF=e=>"build/client/map-widget/chunks/"+e+"/"+{"map-widget-base":"a7ec17f461682a847783","map-widget-panorama-player-app":"c0c42fa732153698a471","map-widget-app":"a6e759c7c6e0ce6038f1","map-widget-panorama-player-banner":"950190d3229dbef7e1d5",ymaps:"8f6dc898fe8c1cf6e28f",tooltip:"9bc634d19989eb879693","lang-switcher":"ef6ff63a7e662370b454","logo-view":"f3502ad4d2109ad2e8e4",flyover:"a92ba960ee1cb606db38","stories-preview":"e964f0fdb1609beebf1f"}[e]+".css",f.o=(e,t)=>Object.prototype.hasOwnProperty.call(e,t),a={},r="maps:",f.l=(e,t,o,n)=>{if(a[e])a[e].push(t);else{var i,d;if(void 0!==o)for(var l=document.getElementsByTagName("script"),c=0;c<l.length;c++){var s=l[c];if(s.getAttribute("src")==e||s.getAttribute("data-webpack")==r+o){i=s;break}}i||(d=!0,(i=document.createElement("script")).charset="utf-8",i.timeout=120,f.nc&&i.setAttribute("nonce",f.nc),i.setAttribute("data-webpack",r+o),i.src=e,0!==i.src.indexOf(window.location.origin+"/")&&(i.crossOrigin="anonymous")),a[e]=[t];var p=(t,r)=>{i.onerror=i.onload=null,clearTimeout(u);var o=a[e];if(delete a[e],i.parentNode&&i.parentNode.removeChild(i),o&&o.forEach((e=>e(r))),t)return t(r)},u=setTimeout(p.bind(null,void 0,{type:"timeout",target:i}),12e4);i.onerror=p.bind(null,i.onerror),i.onload=p.bind(null,i.onload),d&&document.head.appendChild(i)}},f.r=e=>{"undefined"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(e,"__esModule",{value:!0})},f.p="//yastatic.net/s3/front-maps-static/maps-front-maps/",o=e=>new Promise(((t,a)=>{var r=f.miniCssF(e),o=f.p+r;if(((e,t)=>{for(var a=document.getElementsByTagName("link"),r=0;r<a.length;r++){var o=(i=a[r]).getAttribute("data-href")||i.getAttribute("href");if("stylesheet"===i.rel&&(o===e||o===t))return i}var n=document.getElementsByTagName("style");for(r=0;r<n.length;r++){var i;if((o=(i=n[r]).getAttribute("data-href"))===e||o===t)return i}})(r,o))return t();((e,t,a,r)=>{var o=document.createElement("link");o.rel="stylesheet",o.type="text/css",o.onerror=o.onload=n=>{if(o.onerror=o.onload=null,"load"===n.type)a();else{var i=n&&("load"===n.type?"missing":n.type),d=n&&n.target&&n.target.href||t,f=new Error("Loading CSS chunk "+e+" failed.\n("+d+")");f.code="CSS_CHUNK_LOAD_FAILED",f.type=i,f.request=d,o.parentNode.removeChild(o),r(f)}},o.href=t,0!==o.href.indexOf(window.location.origin+"/")&&(o.crossOrigin="anonymous"),document.head.appendChild(o)})(e,o,t,a)})),n={"map-widget":0},f.f.miniCss=(e,t)=>{n[e]?t.push(n[e]):0!==n[e]&&{"map-widget-base":1,"map-widget-panorama-player-app":1,"map-widget-app":1,"map-widget-panorama-player-banner":1,ymaps:1,tooltip:1,"lang-switcher":1,"logo-view":1,flyover:1,"stories-preview":1}[e]&&t.push(n[e]=o(e).then((()=>{n[e]=0}),(t=>{throw delete n[e],t})))},(()=>{f.b=document.baseURI||self.location.href;var e={"map-widget":0};f.f.j=(t,a)=>{var r=f.o(e,t)?e[t]:void 0;if(0!==r)if(r)a.push(r[2]);else{var o=new Promise(((a,o)=>r=e[t]=[a,o]));a.push(r[2]=o);var n=f.p+f.u(t),i=new Error;f.l(n,(a=>{if(f.o(e,t)&&(0!==(r=e[t])&&(e[t]=void 0),r)){var o=a&&("load"===a.type?"missing":a.type),n=a&&a.target&&a.target.src;i.message="Loading chunk "+t+" failed.\n("+o+": "+n+")",i.name="ChunkLoadError",i.type=o,i.request=n,r[1](i)}}),"chunk-"+t,t)}};var t=(t,a)=>{var r,o,[n,i,d]=a,l=0;if(n.some((t=>0!==e[t]))){for(r in i)f.o(i,r)&&(f.m[r]=i[r]);if(d)d(f)}for(t&&t(a);l<n.length;l++)o=n[l],f.o(e,o)&&e[o]&&e[o][0](),e[o]=0},a=self.__LOADABLE_LOADED_CHUNKS__=self.__LOADABLE_LOADED_CHUNKS__||[];a.forEach(t.bind(null,0)),a.push=t.bind(null,a.push.bind(a))})();f(5589)})();</script>-->
   <script defer type="module" src="./js/map.js"></script>
 </head>
 <body>
@@ -27,27 +27,27 @@
     <div class="container_fullHD">
       <div class="header__top">
         <div class="container">
-            <ul class="header__top__list contacts__list">
-              <li class="contacts__item contacts__item_address">
-                <div class="header__top__link">СПб, Октябрьская наб. д.34, 6а</div>
-                <div class="header__top__link">Мурино, ул. Екатерининская, 22 к.1</div>
-              </li>
-              <li class="contacts__item contacts__item_phone">
-                <div>
-                  <a href="tel:78126796677" class="header__top__link">
-                    +7 (812) 679-66-77 <span>(Невский / Кудрово)</span>
-                  </a>
-                </div>
-                <div>
-                  <a href="tel:78126796760" class="header__top__link">
-                    +7 (812) 679-67-60 <span>(Мурино)</span>
-                  </a>
-                </div>
-              </li>
-              <li class="contacts__item contacts__item_time">
-                <div class="header__top__link">Пн-Вс: с 12:00 до 00:00</div>
-              </li>
-            </ul>
+          <ul class="header__top__list contacts__list">
+            <li class="contacts__item contacts__item_address">
+              <div class="header__top__link">СПб, Октябрьская наб. д.34, 6а</div>
+              <div class="header__top__link">Мурино, ул. Екатерининская, 22 к.1</div>
+            </li>
+            <li class="contacts__item contacts__item_phone">
+              <div>
+                <a href="tel:78126796677" class="header__top__link">
+                  +7 (812) 679-66-77 <span>(Невский / Кудрово)</span>
+                </a>
+              </div>
+              <div>
+                <a href="tel:78126796760" class="header__top__link">
+                  +7 (812) 679-67-60 <span>(Мурино)</span>
+                </a>
+              </div>
+            </li>
+            <li class="contacts__item contacts__item_time">
+              <div class="header__top__link">Пн-Вс: с 12:00 до 00:00</div>
+            </li>
+          </ul>
         </div>
       </div>
 
@@ -60,6 +60,11 @@
                  title="Пиццерия mr.YO!"
                  class="logo_header__img"
             >
+          </div>
+          <div class="header__bottom__burger">
+            <button type="button" id="burgerButton" class="btn__burger header__btn__burger">
+              <span>menu</span>
+            </button>
           </div>
           <nav class="header__navigation">
             <ul class="header__navigation__list">
@@ -78,11 +83,11 @@
               <li class="header__navigation__item">
                 <a href="#" class="header__navigation__link">Контакты</a>
               </li>
-<!--              <li class="header__navigation__item">-->
-<!--                <div class="header__navigation__controls">-->
+              <!--              <li class="header__navigation__item">-->
+              <!--                <div class="header__navigation__controls">-->
 
-<!--                </div>-->
-<!--              </li>-->
+              <!--                </div>-->
+              <!--              </li>-->
             </ul>
 
             <div class="header__navigation__controls">
@@ -90,7 +95,9 @@
                 <button class="header__search__btn btn" type="button">
                   <svg width="20" height="22" viewBox="0 0 20 22" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <g>
-                      <path fill-rule="evenodd" clip-rule="evenodd" d="M8.74999 2.25C12.662 2.25 15.8333 5.57988 15.8333 9.6875C15.8333 11.4257 15.2654 13.0246 14.3138 14.2909L18.9226 19.1313L17.7441 20.3687L13.1342 15.5295C11.9282 16.5287 10.4054 17.125 8.74999 17.125C4.83797 17.125 1.66666 13.7951 1.66666 9.6875C1.66666 5.57988 4.83797 2.25 8.74999 2.25ZM8.74999 4C5.75845 4 3.33332 6.54638 3.33332 9.6875C3.33332 12.8286 5.75845 15.375 8.74999 15.375C11.7415 15.375 14.1667 12.8286 14.1667 9.6875C14.1667 6.54638 11.7415 4 8.74999 4Z" fill="#EE7F7F"/>
+                      <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M8.74999 2.25C12.662 2.25 15.8333 5.57988 15.8333 9.6875C15.8333 11.4257 15.2654 13.0246 14.3138 14.2909L18.9226 19.1313L17.7441 20.3687L13.1342 15.5295C11.9282 16.5287 10.4054 17.125 8.74999 17.125C4.83797 17.125 1.66666 13.7951 1.66666 9.6875C1.66666 5.57988 4.83797 2.25 8.74999 2.25ZM8.74999 4C5.75845 4 3.33332 6.54638 3.33332 9.6875C3.33332 12.8286 5.75845 15.375 8.74999 15.375C11.7415 15.375 14.1667 12.8286 14.1667 9.6875C14.1667 6.54638 11.7415 4 8.74999 4Z"
+                            fill="#EE7F7F"/>
                     </g>
                   </svg>
                 </button>
@@ -99,7 +106,9 @@
               <div class="header__cart cart bg_grey">
                 <a href="#" class="cart__link">
                   <svg width="19" height="18" viewBox="0 0 19 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path fill-rule="evenodd" clip-rule="evenodd" d="M15.6953 13.5C16.9336 13.5 17.9375 14.5074 17.9375 15.75C17.9375 16.9926 16.9336 18 15.6953 18C14.457 18 13.4531 16.9926 13.4531 15.75C13.4531 14.5074 14.457 13.5 15.6953 13.5ZM5.97916 13.5C7.21749 13.5 8.22135 14.5074 8.22135 15.75C8.22135 16.9926 7.21749 18 5.97916 18C4.74084 18 3.73698 16.9926 3.73698 15.75C3.73698 14.5074 4.74084 13.5 5.97916 13.5ZM5.97916 15C5.56639 15 5.23177 15.3358 5.23177 15.75C5.23177 16.1642 5.56639 16.5 5.97916 16.5C6.39194 16.5 6.72656 16.1642 6.72656 15.75C6.72656 15.3358 6.39194 15 5.97916 15ZM15.6953 15C15.2825 15 14.9479 15.3358 14.9479 15.75C14.9479 16.1642 15.2825 16.5 15.6953 16.5C16.1081 16.5 16.4427 16.1642 16.4427 15.75C16.4427 15.3358 16.1081 15 15.6953 15ZM2.67175 0C4.03111 0 5.21235 0.918875 5.55983 2.22475L5.59497 2.37141L5.88873 3.75H15.511C15.5837 3.75 15.6563 3.75532 15.7281 3.76591L15.8352 3.78572C16.6045 3.95726 17.1025 4.69514 16.9904 5.46522L16.9702 5.57539L15.9376 10.2381C15.7196 11.2228 14.8776 11.9357 13.8851 11.9959L13.7488 12H7.93497C6.92366 12 6.0438 11.3219 5.77533 10.355L5.74256 10.2214L4.13336 2.6857C3.99436 2.03478 3.44666 1.55881 2.79507 1.50507L2.67175 1.5H0V0H2.67175ZM15.511 5.25H6.20936L7.20417 9.90714C7.27186 10.2241 7.53339 10.4581 7.84797 10.4949L7.93497 10.5H13.7488C14.0699 10.5 14.3516 10.2948 14.4548 9.99633L14.4784 9.91269L15.511 5.25Z" fill="white"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                          d="M15.6953 13.5C16.9336 13.5 17.9375 14.5074 17.9375 15.75C17.9375 16.9926 16.9336 18 15.6953 18C14.457 18 13.4531 16.9926 13.4531 15.75C13.4531 14.5074 14.457 13.5 15.6953 13.5ZM5.97916 13.5C7.21749 13.5 8.22135 14.5074 8.22135 15.75C8.22135 16.9926 7.21749 18 5.97916 18C4.74084 18 3.73698 16.9926 3.73698 15.75C3.73698 14.5074 4.74084 13.5 5.97916 13.5ZM5.97916 15C5.56639 15 5.23177 15.3358 5.23177 15.75C5.23177 16.1642 5.56639 16.5 5.97916 16.5C6.39194 16.5 6.72656 16.1642 6.72656 15.75C6.72656 15.3358 6.39194 15 5.97916 15ZM15.6953 15C15.2825 15 14.9479 15.3358 14.9479 15.75C14.9479 16.1642 15.2825 16.5 15.6953 16.5C16.1081 16.5 16.4427 16.1642 16.4427 15.75C16.4427 15.3358 16.1081 15 15.6953 15ZM2.67175 0C4.03111 0 5.21235 0.918875 5.55983 2.22475L5.59497 2.37141L5.88873 3.75H15.511C15.5837 3.75 15.6563 3.75532 15.7281 3.76591L15.8352 3.78572C16.6045 3.95726 17.1025 4.69514 16.9904 5.46522L16.9702 5.57539L15.9376 10.2381C15.7196 11.2228 14.8776 11.9357 13.8851 11.9959L13.7488 12H7.93497C6.92366 12 6.0438 11.3219 5.77533 10.355L5.74256 10.2214L4.13336 2.6857C3.99436 2.03478 3.44666 1.55881 2.79507 1.50507L2.67175 1.5H0V0H2.67175ZM15.511 5.25H6.20936L7.20417 9.90714C7.27186 10.2241 7.53339 10.4581 7.84797 10.4949L7.93497 10.5H13.7488C14.0699 10.5 14.3516 10.2948 14.4548 9.99633L14.4784 9.91269L15.511 5.25Z"
+                          fill="white"/>
                   </svg>
                 </a>
                 <span class="cart__info">
@@ -138,7 +147,7 @@
 
             <div class="hero__slider__item swiper-slide">
               <div class="hero__slider__image__wrapper">
-                <img srcset="./images/hero2.jpg, ./images/hero2_x2.png 2x"
+                <img srcset="./images/hero2.jpg"
                      src="./images/hero2.jpg"
                      alt=""
                      title=""
@@ -174,7 +183,7 @@
 
             <div class="hero__slider__item swiper-slide">
               <div class="hero__slider__image__wrapper">
-                <img srcset="./images/hero2.jpg, ./images/hero2_x2.png 2x"
+                <img srcset="./images/hero2.jpg"
                      src="./images/hero2.jpg"
                      alt=""
                      title=""
@@ -219,8 +228,8 @@
                   fill="#EE7F7F"/>
               </g>
             </svg>
-            <h3 class="title_h3">Бесплатная доставка</h3>
-            <p>Быстрая доставка. Мы доставим вам заказ в течение 60 минут</p>
+            <h3 class="title_h3">Свежие продукты</h3>
+            <p>Используем для приготовления только самые качественные и свежие ингредиенты</p>
           </li>
           <li class="advantages__item">
             <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -230,8 +239,8 @@
                   fill="#EE7F7F"/>
               </g>
             </svg>
-            <h3 class="title_h3">Бесплатная доставка</h3>
-            <p>Быстрая доставка. Мы доставим вам заказ в течение 60 минут</p>
+            <h3 class="title_h3">Работают профессионалы</h3>
+            <p>Работа с лучшими суши-мастерами и шеф-поварами</p>
           </li>
         </ul>
       </div>
@@ -241,19 +250,217 @@
       <div class="container">
         <h2 class="visually-hidden">Категории меню</h2>
         <div class="categories__list">
-          <div class="categories__item categories__item_blue categories__item_overflow">
+          <div class="categories__item categories__item_1 categories__item_blue">
             <a href="#" class="categories__item__link">
               <h3 class="title_h3">Роллы</h3>
-              <div class="categories__item__inner">
-                <img srcset="./images/cat1.webp, ./images/cat1_x2.webp 2x"
-                     src="./images/cat1.png"
+              <div class="categories__item__inner"></div>
+              <img srcset="./images/cat1.webp, ./images/cat1_x2.webp 2x"
+                   src="./images/cat1.png"
+                   alt="Роллы mrYO"
+                   title="Роллы mrYO"
+                   class="categories__image"
+              >
+            </a>
+          </div>
+
+          <div class="categories__item categories__item_2 categories__item_pink">
+            <a href="#" class="categories__item__link">
+              <h3 class="title_h3">Пицца</h3>
+              <div class="categories__item__inner"></div>
+              <img srcset="./images/cat2_x2.png, ./images/cat2_x2.png 2x"
+                   src="./images/cat2_x2.png"
+                   alt="Роллы mrYO"
+                   title="Роллы mrYO"
+                   class="categories__image"
+              >
+            </a>
+          </div>
+
+          <div class="categories__item categories__item_3 categories__item_blue categories__item_vertical">
+            <a href="#" class="categories__item__link">
+              <h3 class="title_h3">WOK</h3>
+              <div class="categories__item__inner"></div>
+              <img srcset="./images/cart3.png"
+                   src="./images/cart3.png"
+                   alt="Роллы mrYO"
+                   title="Роллы mrYO"
+                   class="categories__image"
+              >
+            </a>
+          </div>
+
+          <div class="categories__item categories__item_4 categories__item_double-block">
+
+            <div class="categories__item__link__wrapper categories__item__link__wrapper_blue">
+              <a href="#" class="categories__item__link">
+                <h3 class="title_h3">Мини Бургеры</h3>
+                <img srcset="./images/cart4.png"
+                     src="./images/cart4.png"
                      alt="Роллы mrYO"
                      title="Роллы mrYO"
                      class="categories__image"
                 >
-              </div>
+              </a>
+            </div>
+
+            <div class="categories__item__link__wrapper categories__item__link__wrapper_pink">
+              <a href="#" class="categories__item__link">
+                <h3 class="title_h3">Ланчи</h3>
+                <img srcset="./images/cart5.png"
+                     src="./images/cart5.png"
+                     alt="Роллы mrYO"
+                     title="Роллы mrYO"
+                     class="categories__image"
+                >
+              </a>
+            </div>
+
+            <div class="categories__item__sticker">категории месяца</div>
+          </div>
+
+          <div class="categories__item categories__item_5 categories__item_blue">
+            <a href="#" class="categories__item__link">
+              <h3 class="title_h3">Сеты и комбо</h3>
+              <div class="categories__item__inner"></div>
+              <img srcset="./images/cart6.png"
+                   src="./images/cart6.png"
+                   alt="Роллы mrYO"
+                   title="Роллы mrYO"
+                   class="categories__image"
+              >
             </a>
           </div>
+
+          <div class="categories__item categories__item_6 categories__item_pink">
+            <a href="#" class="categories__item__link">
+              <h3 class="title_h3">Снэк наборы</h3>
+              <div class="categories__item__inner"></div>
+              <img srcset="./images/cart7.png"
+                   src="./images/cart7.png"
+                   alt="Роллы mrYO"
+                   title="Роллы mrYO"
+                   class="categories__image"
+              >
+            </a>
+          </div>
+
+          <div class="categories__item categories__item_7 categories__item_pink categories__item_vertical">
+            <a href="#" class="categories__item__link">
+              <h3 class="title_h3">Десерты<br>и мороженое</h3>
+              <div class="categories__item__inner"></div>
+              <img srcset="./images/cart8.png"
+                   src="./images/cart8.png"
+                   alt="Роллы mrYO"
+                   title="Роллы mrYO"
+                   class="categories__image"
+              >
+            </a>
+          </div>
+
+          <div class="categories__item categories__item_8 categories__item_pink">
+            <a href="#" class="categories__item__link">
+              <h3 class="title_h3">Детское меню</h3>
+              <div class="categories__item__inner"></div>
+              <img srcset="./images/cart9.png"
+                   src="./images/cart9.png"
+                   alt="Роллы mrYO"
+                   title="Роллы mrYO"
+                   class="categories__image"
+              >
+            </a>
+          </div>
+
+          <div class="categories__item categories__item_9 categories__item_blue">
+            <a href="#" class="categories__item__link">
+              <h3 class="title_h3">Половинки роллов</h3>
+              <div class="categories__item__inner"></div>
+              <img srcset="./images/cart10.png"
+                   src="./images/cart10.png"
+                   alt="Роллы mrYO"
+                   title="Роллы mrYO"
+                   class="categories__image"
+              >
+            </a>
+          </div>
+
+          <div class="categories__item categories__item_10 categories__item_blue">
+            <a href="#" class="categories__item__link">
+              <h3 class="title_h3">Напитки</h3>
+              <div class="categories__item__inner"></div>
+              <img srcset="./images/cart11.png"
+                   src="./images/cart11.png"
+                   alt="Роллы mrYO"
+                   title="Роллы mrYO"
+                   class="categories__image"
+              >
+            </a>
+          </div>
+
+          <div class="categories__item categories__item_11 categories__item_pink">
+            <a href="#" class="categories__item__link">
+              <h3 class="title_h3">Поке</h3>
+              <div class="categories__item__inner"></div>
+              <img srcset="./images/cart12.png"
+                   src="./images/cart12.png"
+                   alt="Роллы mrYO"
+                   title="Роллы mrYO"
+                   class="categories__image"
+              >
+            </a>
+          </div>
+
+          <div class="categories__item categories__item_12 categories__item_blue">
+            <a href="#" class="categories__item__link">
+              <h3 class="title_h3">Салаты</h3>
+              <div class="categories__item__inner"></div>
+              <img srcset="./images/cart13.png"
+                   src="./images/cart13.png"
+                   alt="Роллы mrYO"
+                   title="Роллы mrYO"
+                   class="categories__image"
+              >
+            </a>
+          </div>
+
+          <div class="categories__item categories__item_13 categories__item_pink categories__item_no-inner">
+            <a href="#" class="categories__item__link">
+              <h3 class="title_h3">Соусы</h3>
+              <div class="categories__item__inner"></div>
+              <img srcset="./images/cart14.png"
+                   src="./images/cart14.png"
+                   alt="Роллы mrYO"
+                   title="Роллы mrYO"
+                   class="categories__image"
+              >
+            </a>
+          </div>
+
+          <div class="categories__item categories__item_14 categories__item_blue">
+            <a href="#" class="categories__item__link">
+              <h3 class="title_h3">Супы</h3>
+              <div class="categories__item__inner"></div>
+              <img srcset="./images/cart15.png"
+                   src="./images/cart15.png"
+                   alt="Роллы mrYO"
+                   title="Роллы mrYO"
+                   class="categories__image"
+              >
+            </a>
+          </div>
+
+          <div class="categories__item categories__item_15 categories__item_pink categories__item_no-inner">
+            <a href="#" class="categories__item__link">
+              <h3 class="title_h3">Закуски</h3>
+              <div class="categories__item__inner"></div>
+              <img srcset="./images/cart16.png"
+                   src="./images/cart16.png"
+                   alt="Роллы mrYO"
+                   title="Роллы mrYO"
+                   class="categories__image"
+              >
+            </a>
+          </div>
+
         </div>
       </div>
     </section>
@@ -272,7 +479,7 @@
               >
             </div>
             <div class="sales__item__text">
-              <h3 class="title_h3">Дарим скидку 20% в честь Дня рождения</h3>
+              <h3 class="title_h3">Дарим скидку 20% в честь <br>Дня рождения</h3>
               <p>В день рождения можно получить скидку 20% на заказ с доставкой или в ресторане</p>
             </div>
           </li>
@@ -319,18 +526,31 @@
               >
             </div>
             <div class="sales__item__text">
-              <h3 class="title_h3">Дарим ролл за подписку в Вконтакте!</h3>
+              <h3 class="title_h3">Дарим ролл <br>за подписку <br>в Вконтакте!</h3>
               <p>Дарим ролл за подписку на нашу группу в ВКонтакте</p>
+              <div class="sales__item__bottom">
+                <a href="#" class="sales__item__link btn btn_round btn_vk">
+                  <svg width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="22" cy="22" r="22" fill="#0077FF"/>
+                    <g>
+                      <path
+                        d="M21.2325 29.572H22.7263C22.7263 29.572 23.1779 29.522 23.4076 29.2735C23.6202 29.0454 23.6123 28.6172 23.6123 28.6172C23.6123 28.6172 23.5827 26.6124 24.514 26.3171C25.4312 26.0264 26.6094 28.2547 27.858 29.1126C28.8018 29.7611 29.519 29.6189 29.519 29.6189L32.8583 29.572C32.8583 29.572 34.6053 29.4642 33.7772 28.0906C33.71 27.9781 33.2943 27.0749 31.2942 25.2185C29.2003 23.2746 29.4815 23.5903 32.0036 20.2291C33.5396 18.1821 34.1538 16.932 33.9616 16.3976C33.7787 15.8882 32.649 16.0225 32.649 16.0225L28.8924 16.0444C28.8924 16.0444 28.6143 16.0069 28.4065 16.1304C28.2049 16.2522 28.0752 16.5335 28.0752 16.5335C28.0752 16.5335 27.4798 18.118 26.686 19.465C25.0125 22.3074 24.3421 22.4574 24.0686 22.2808C23.4326 21.8699 23.592 20.6276 23.592 19.7463C23.592 16.9914 24.0092 15.8428 22.7779 15.5459C22.3685 15.4475 22.0685 15.3819 21.0231 15.3709C19.6824 15.3569 18.5463 15.3756 17.9041 15.6897C17.476 15.8991 17.1462 16.3663 17.3478 16.3929C17.5963 16.4257 18.1588 16.5445 18.4573 16.9507C18.8432 17.4742 18.8292 18.6524 18.8292 18.6524C18.8292 18.6524 19.0511 21.8949 18.312 22.298C17.8041 22.5746 17.1087 22.0105 15.6164 19.4306C14.8523 18.1102 14.2742 16.6492 14.2742 16.6492C14.2742 16.6492 14.1632 16.3773 13.9648 16.2319C13.7241 16.0554 13.3866 15.9991 13.3866 15.9991L9.81445 16.021C9.81445 16.021 9.27847 16.0366 9.08158 16.2694C8.90657 16.4773 9.06752 16.9054 9.06752 16.9054C9.06752 16.9054 11.8646 23.4481 15.0305 26.7468C17.9354 29.7704 21.2325 29.572 21.2325 29.572Z"
+                        fill="white"/>
+                    </g>
+                  </svg>
+                  подписаться
+                </a>
+              </div>
             </div>
           </li>
         </ul>
       </div>
     </section>
 
-    <section class="map bg_grey">
+    <section class="ya-map bg_grey">
       <div class="container">
         <h2 class="title_h2">Зоны доставки</h2>
-        <div class="map__view">
+        <div class="ya-map__view">
           <!--    <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A1ab875b9945b0cac64dc12ce40a62d12fa72f0f2cd3c0d81f760e72ddbb5e5d4&amp;width=100%&amp;height=450&amp;lang=ru_RU&amp;scroll=false"></script>-->
           <img src="./images/map.jpg">
         </div>
@@ -475,10 +695,18 @@
               <a href="#" class="footer__callback__link btn btn_round btn_dark-blue">
                 <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <g>
-                    <path d="M28 13.1212C27.8313 10.3912 26.8674 7.77028 25.2271 5.58151C23.5868 3.39274 21.3418 1.73182 18.769 0.803509C16.1962 -0.124805 13.4079 -0.27993 10.748 0.357259C8.08806 0.994448 5.67274 2.3961 3.79978 4.3894C1.92683 6.38271 0.678119 8.88054 0.207603 11.5749C-0.262912 14.2694 0.0653338 17.0426 1.15187 19.5527C2.23841 22.0628 4.03575 24.2001 6.3223 25.7011C8.60885 27.202 11.2847 28.0011 14.0198 27.9997H22.1667C23.7133 27.9981 25.1961 27.3831 26.2898 26.2894C27.3834 25.1958 27.9985 23.713 28 22.1663V13.1212ZM25.6667 22.1663C25.6667 23.0946 25.2979 23.9848 24.6415 24.6412C23.9852 25.2976 23.0949 25.6663 22.1667 25.6663H14.0198C12.3736 25.6656 10.746 25.3179 9.24315 24.6459C7.74031 23.9739 6.39599 22.9926 5.29784 21.7662C4.19437 20.5403 3.36576 19.0927 2.86755 17.5204C2.36934 15.9481 2.21305 14.2875 2.40917 12.6498C2.71885 10.0668 3.87939 7.66023 5.70785 5.80959C7.53631 3.95895 9.92869 2.76948 12.5078 2.42868C13.0109 2.36562 13.5175 2.33367 14.0245 2.33301C16.7434 2.3256 19.3781 3.27557 21.4667 5.01635C22.6865 6.03012 23.6877 7.28103 24.4096 8.69325C25.1316 10.1055 25.5592 11.6496 25.6667 13.232V22.1663Z" fill="#FAFAFA"/>
-                    <path d="M9.33332 10.5003H14C14.3094 10.5003 14.6062 10.3774 14.8249 10.1586C15.0437 9.93982 15.1667 9.64308 15.1667 9.33366C15.1667 9.02424 15.0437 8.72749 14.8249 8.5087C14.6062 8.28991 14.3094 8.16699 14 8.16699H9.33332C9.0239 8.16699 8.72716 8.28991 8.50837 8.5087C8.28957 8.72749 8.16666 9.02424 8.16666 9.33366C8.16666 9.64308 8.28957 9.93982 8.50837 10.1586C8.72716 10.3774 9.0239 10.5003 9.33332 10.5003Z" fill="#FAFAFA"/>
-                    <path d="M18.6667 12.833H9.33332C9.0239 12.833 8.72716 12.9559 8.50837 13.1747C8.28957 13.3935 8.16666 13.6903 8.16666 13.9997C8.16666 14.3091 8.28957 14.6058 8.50837 14.8246C8.72716 15.0434 9.0239 15.1663 9.33332 15.1663H18.6667C18.9761 15.1663 19.2728 15.0434 19.4916 14.8246C19.7104 14.6058 19.8333 14.3091 19.8333 13.9997C19.8333 13.6903 19.7104 13.3935 19.4916 13.1747C19.2728 12.9559 18.9761 12.833 18.6667 12.833Z" fill="#FAFAFA"/>
-                    <path d="M18.6667 17.5H9.33332C9.0239 17.5 8.72716 17.6229 8.50837 17.8417C8.28957 18.0605 8.16666 18.3572 8.16666 18.6667C8.16666 18.9761 8.28957 19.2728 8.50837 19.4916C8.72716 19.7104 9.0239 19.8333 9.33332 19.8333H18.6667C18.9761 19.8333 19.2728 19.7104 19.4916 19.4916C19.7104 19.2728 19.8333 18.9761 19.8333 18.6667C19.8333 18.3572 19.7104 18.0605 19.4916 17.8417C19.2728 17.6229 18.9761 17.5 18.6667 17.5Z" fill="#FAFAFA"/>
+                    <path
+                      d="M28 13.1212C27.8313 10.3912 26.8674 7.77028 25.2271 5.58151C23.5868 3.39274 21.3418 1.73182 18.769 0.803509C16.1962 -0.124805 13.4079 -0.27993 10.748 0.357259C8.08806 0.994448 5.67274 2.3961 3.79978 4.3894C1.92683 6.38271 0.678119 8.88054 0.207603 11.5749C-0.262912 14.2694 0.0653338 17.0426 1.15187 19.5527C2.23841 22.0628 4.03575 24.2001 6.3223 25.7011C8.60885 27.202 11.2847 28.0011 14.0198 27.9997H22.1667C23.7133 27.9981 25.1961 27.3831 26.2898 26.2894C27.3834 25.1958 27.9985 23.713 28 22.1663V13.1212ZM25.6667 22.1663C25.6667 23.0946 25.2979 23.9848 24.6415 24.6412C23.9852 25.2976 23.0949 25.6663 22.1667 25.6663H14.0198C12.3736 25.6656 10.746 25.3179 9.24315 24.6459C7.74031 23.9739 6.39599 22.9926 5.29784 21.7662C4.19437 20.5403 3.36576 19.0927 2.86755 17.5204C2.36934 15.9481 2.21305 14.2875 2.40917 12.6498C2.71885 10.0668 3.87939 7.66023 5.70785 5.80959C7.53631 3.95895 9.92869 2.76948 12.5078 2.42868C13.0109 2.36562 13.5175 2.33367 14.0245 2.33301C16.7434 2.3256 19.3781 3.27557 21.4667 5.01635C22.6865 6.03012 23.6877 7.28103 24.4096 8.69325C25.1316 10.1055 25.5592 11.6496 25.6667 13.232V22.1663Z"
+                      fill="#FAFAFA"/>
+                    <path
+                      d="M9.33332 10.5003H14C14.3094 10.5003 14.6062 10.3774 14.8249 10.1586C15.0437 9.93982 15.1667 9.64308 15.1667 9.33366C15.1667 9.02424 15.0437 8.72749 14.8249 8.5087C14.6062 8.28991 14.3094 8.16699 14 8.16699H9.33332C9.0239 8.16699 8.72716 8.28991 8.50837 8.5087C8.28957 8.72749 8.16666 9.02424 8.16666 9.33366C8.16666 9.64308 8.28957 9.93982 8.50837 10.1586C8.72716 10.3774 9.0239 10.5003 9.33332 10.5003Z"
+                      fill="#FAFAFA"/>
+                    <path
+                      d="M18.6667 12.833H9.33332C9.0239 12.833 8.72716 12.9559 8.50837 13.1747C8.28957 13.3935 8.16666 13.6903 8.16666 13.9997C8.16666 14.3091 8.28957 14.6058 8.50837 14.8246C8.72716 15.0434 9.0239 15.1663 9.33332 15.1663H18.6667C18.9761 15.1663 19.2728 15.0434 19.4916 14.8246C19.7104 14.6058 19.8333 14.3091 19.8333 13.9997C19.8333 13.6903 19.7104 13.3935 19.4916 13.1747C19.2728 12.9559 18.9761 12.833 18.6667 12.833Z"
+                      fill="#FAFAFA"/>
+                    <path
+                      d="M18.6667 17.5H9.33332C9.0239 17.5 8.72716 17.6229 8.50837 17.8417C8.28957 18.0605 8.16666 18.3572 8.16666 18.6667C8.16666 18.9761 8.28957 19.2728 8.50837 19.4916C8.72716 19.7104 9.0239 19.8333 9.33332 19.8333H18.6667C18.9761 19.8333 19.2728 19.7104 19.4916 19.4916C19.7104 19.2728 19.8333 18.9761 19.8333 18.6667C19.8333 18.3572 19.7104 18.0605 19.4916 17.8417C19.2728 17.6229 18.9761 17.5 18.6667 17.5Z"
+                      fill="#FAFAFA"/>
                   </g>
                 </svg>
                 оставить отзыв или задать вопрос

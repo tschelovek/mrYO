@@ -9,5 +9,5 @@ const swiper = new Swiper('#slider_hero', {
     delay: 3000,
   },
   speed: 1000,
-  effect: 'coverflow'
+  // effect: 'coverflow'
 })

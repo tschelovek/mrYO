@@ -10,8 +10,9 @@
       border-radius: 50px
       overflow: hidden
     &__image
-      max-width: 100%
       &__wrapper
+        display: flex
+        justify-content: center
         position: absolute
         top: 0
         left: 0
@@ -65,7 +66,7 @@
       -webkit-border-radius: 2px
       -moz-border-radius: 2px
       border-radius: 2px
-      transition: background-color 0.3s, width 0.3s
+      transition: background-color 0.6s, width 0.6s
       &-active
         background-color: white
         width: 70px
@@ -79,18 +80,57 @@
     gap: 80px
   &__item
     padding: 20px 0
+    .title_h3
+      margin: 20px 0 8px
+      font-weight: 400
+      font-size: 22px
+      line-height: 26px
+      color: $darkBlue
+    p
+      font-family: 'Montserrat', sans-serif
+      font-weight: 400
+      font-size: 16px
+      line-height: 1.6
+      color: $greyText
 
 .categories
+  padding: 20px 0 140px
+  &__list
+    display: grid
+    gap: 30px
+    grid-template-columns: repeat(12, 1fr)
+    grid-template-rows: repeat(6, 226px)
   &__item
     padding: 36px 40px
+    display: flex
     position: relative
     overflow: hidden
-    min-height: 200px
+    //min-height: 200px
     min-width: 280px
     background-color: white
-    -webkit-border-radius: 50px
-    -moz-border-radius: 50px
-    border-radius: 50px
+    -webkit-border-radius: 40px
+    -moz-border-radius: 40px
+    border-radius: 40px
+    -webkit-transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out
+    -moz-transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out
+    -ms-transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out
+    -o-transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out
+    transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out
+    &:hover
+      box-shadow: 0px 4px 8px 0px #e0e0e0
+    &__sticker
+      padding: 12px 20px
+      position: absolute
+      top: 0
+      left: 0
+      background-color: $red
+      color: white
+      font-family: 'Jost', sans-serif
+      font-weight: 500
+      font-size: 14px
+      line-height: 20px
+      letter-spacing: 0.08em
+      text-transform: uppercase
     &__link
       color: $darkBlue
       &::before
@@ -100,17 +140,146 @@
         bottom: 0
         right: 0
         left: 0
+      &__wrapper
+        padding: 36px 40px
+        position: relative
+        min-height: 200px
+        -webkit-border-radius: 30px
+        -moz-border-radius: 30px
+        border-radius: 30px
+        -webkit-transition: background-color 0.3s ease-in-out
+        -moz-transition: background-color 0.3s ease-in-out
+        -ms-transition: background-color 0.3s ease-in-out
+        -o-transition: background-color 0.3s ease-in-out
+        transition: background-color 0.3s ease-in-out
+        overflow: hidden
+        &_blue
+            background-color: $darkBlue
+        &_pink
+          background-color: $pink
+          &:hover
+            background-color: $darkBlue
+        .title_h3
+          color: white
     &__inner
       position: absolute
-      bottom: -20px
-      right: -20px
+      bottom: -60px
+      right: -30px
+      width: 220px
+      height: 220px
       transform: rotate(40deg)
       -webkit-border-radius: 50px
       -moz-border-radius: 50px
       border-radius: 50px
+      -webkit-transition: background-color 0.3s ease-in-out
+      -moz-transition: background-color 0.3s ease-in-out
+      -ms-transition: background-color 0.3s ease-in-out
+      -o-transition: background-color 0.3s ease-in-out
+      transition: background-color 0.3s ease-in-out
     &_blue
       .categories__item__inner
         background-color: $darkBlue
+      &:hover
+        background-color: $darkBlue
+        .categories__item__inner
+          background-color: white
+        .title_h3
+          color: white
+    &_pink
+      .categories__item__inner
+        background-color: $pink
+      &:hover
+        background-color: $pink
+        .categories__item__inner
+          background-color: white
+        .title_h3
+          color: white
+    &_no-inner .categories__item__inner
+      display: none
+    &_vertical .categories__item__inner
+      bottom: -80px
+      right: -80px
+      width: 320px
+      height: 320px
+      transform: rotate(24deg)
+    &_double-block
+      padding: 30px
+      display: flex
+      flex-flow: column
+      gap: 30px
+      -webkit-border-radius: 30px
+      -moz-border-radius: 30px
+      border-radius: 30px
+    &_1, &_2
+      grid-column: 1 / span 4
+    &_2
+      grid-row: 2
+    &_3
+      grid-column: 5 / span 3
+      grid-row: 1 / span 2
+    &_4
+      grid-column: 8 / 13
+      grid-row: 1 / span 2
+    &_5
+      grid-column: 1 / span 6
+      .categories__item__inner
+        bottom: -152px
+        right: -70px
+        width: 320px
+        height: 320px
+    &_6
+      grid-column: 7 / span 6
+      .categories__item__inner
+        bottom: -152px
+        right: -70px
+        width: 320px
+        height: 320px
+    &_7
+      grid-row: 4 / span 2
+      grid-column: 1 / span 3
+    &_8
+      grid-row: 4
+      grid-column: 4 / span 4
+    &_9
+      grid-row: 4
+      grid-column: 8 / span 5
+    &_10
+      grid-row: 5
+      grid-column: 4 / span 4
+    &_11
+      grid-row: 5
+      grid-column: 8 / span 5
+    &_12
+      grid-row: 6
+      grid-column: 1 / span 3
+      .categories__item__inner
+        width: 180px
+        height: 200px
+    &_13
+      grid-row: 6
+      grid-column: 4 / span 3
+    &_14
+      grid-row: 6
+      grid-column: 7 / span 3
+      .categories__item__inner
+        width: 180px
+        height: 200px
+    &_15
+      grid-row: 6
+      grid-column: 10 / span 3
+    .title_h3
+      position: relative
+      z-index: 10
+      font-size: 32px
+      -webkit-transition: color 0.3s ease-in-out
+      -moz-transition: color 0.3s ease-in-out
+      -ms-transition: color 0.3s ease-in-out
+      -o-transition: color 0.3s ease-in-out
+      transition: color 0.3s ease-in-out
+  &__image
+    position: absolute
+    bottom: 0
+    right: 0
 
 .sales
   padding: 96px 0 142px
@@ -127,12 +296,14 @@
     border-radius: 50px
     overflow: hidden
     &_big
-      padding: 48px 60px
+      padding: 48px 60px 40px
       flex: 3
       max-width: 688px
       min-width: 520px
+      .sales__item__text
+        max-width: 64%
     &_small
-      padding: 48px 50px
+      padding: 48px 50px 16px
       flex: 2
       max-width: 482px
       min-width: 320px
@@ -147,15 +318,28 @@
       img
         //width: 100%
     &__text
+      height: 100%
+      display: flex
+      flex-flow: column
       color: white
+      p
+        margin-top: 12px
+        font-family: 'Montserrat', sans-serif
+        font-weight: 500
+        font-size: 22px
+        line-height: 1.45
       .title_h3
-        font-family: 'Jost', sans-serif
-        font-style: normal
-        font-weight: 600
         font-size: 42px
         line-height: 1.25
+    &__bottom
+      margin-top: auto
+    &__link
+
+.ya-map
+  padding: 96px 0 0
 
 .promo
+  margin-top: -50px
   &__wrapper
     padding: 50px 76px
     -webkit-border-radius: 50px
