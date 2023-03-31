@@ -9,6 +9,7 @@
       -moz-border-radius: 50px
       border-radius: 50px
       overflow: hidden
+      height: auto
     &__image
       &__wrapper
         display: flex
@@ -105,8 +106,6 @@
     display: flex
     position: relative
     overflow: hidden
-    //min-height: 200px
-    min-width: 280px
     background-color: white
     -webkit-border-radius: 40px
     -moz-border-radius: 40px
@@ -143,7 +142,7 @@
       &__wrapper
         padding: 36px 40px
         position: relative
-        min-height: 200px
+        flex: 1
         -webkit-border-radius: 30px
         -moz-border-radius: 30px
         border-radius: 30px
@@ -235,37 +234,29 @@
         width: 320px
         height: 320px
     &_7
-      grid-row: 4 / span 2
       grid-column: 1 / span 3
+      grid-row: 4 / span 2
     &_8
-      grid-row: 4
       grid-column: 4 / span 4
     &_9
-      grid-row: 4
       grid-column: 8 / span 5
     &_10
-      grid-row: 5
       grid-column: 4 / span 4
     &_11
-      grid-row: 5
       grid-column: 8 / span 5
     &_12
-      grid-row: 6
       grid-column: 1 / span 3
       .categories__item__inner
         width: 180px
         height: 200px
     &_13
-      grid-row: 6
       grid-column: 4 / span 3
     &_14
-      grid-row: 6
       grid-column: 7 / span 3
       .categories__item__inner
         width: 180px
         height: 200px
     &_15
-      grid-row: 6
       grid-column: 10 / span 3
     .title_h3
       position: relative
@@ -316,7 +307,8 @@
       overflow: hidden
       z-index: -1
       img
-        //width: 100%
+        min-width: 100%
+        min-height: 100%
     &__text
       height: 100%
       display: flex
@@ -333,10 +325,12 @@
         line-height: 1.25
     &__bottom
       margin-top: auto
-    &__link
+      max-width: 160px
 
 .ya-map
   padding: 96px 0 0
+  img
+    max-width: 100%
 
 .promo
   margin-top: -50px
@@ -349,6 +343,9 @@
     -o-transform: translateY(50%)
     transform: translateY(50%)
     background-repeat: no-repeat
+    background-position: right center
+    background-size: cover
+    overflow: hidden
   &__content
     margin-left: auto
     max-width: 576px
@@ -360,9 +357,11 @@
     margin-top: 30px
     display: flex
     gap: 10px
+    flex-flow: wrap
   &__input
     padding: 0 30px
-    flex: 1
+    flex: 2
+    height: 60px
     background-color: transparent
     border: 1px solid white
     -webkit-border-radius: 30px
@@ -381,4 +380,6 @@
       font-weight: 400
       font-size: 22px
       line-height: 1.2
+  &__submit
+    flex: 1
 

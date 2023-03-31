@@ -41,48 +41,55 @@ input:focus
   font-family: Muller, sans-serif
   cursor: pointer
   &__burger
-    padding: 0
+    padding: 10px
     position: relative
     display: none
     align-items: center
     justify-content: center
-    width: 28px
-    height: 20px
+    width: 42px
+    height: 42px
+    -webkit-border-radius: 50%
+    -moz-border-radius: 50%
+    border-radius: 50%
+    border: 2px solid $darkBlue
     font-size: 0
     background-color: inherit
-    border: none
     z-index: 20
+    cursor: pointer
     &:focus
       outline: none
     &:focus-visible
       outline: $darkBlue
     span
       display: block
-      width: 100%
+      width: 18px
       height: 2px
       background-color: $darkBlue
       transition: transform 0.3s, background-color 0.3s ease-out
     span::before, span::after
       content: ''
       position: absolute
-      right: 0
+      right: 10px
       display: block
-      width: 100%
+      width: 18px
       height: 2px
+      //-webkit-border-radius: 1px
+      //-moz-border-radius: 1px
+      //border-radius: 1px
       background-color: $darkBlue
       transition: transform 0.3s ease-in-out
     span::before
-      top: 0
+      top: 12px
     span::after
-      bottom: 0
+      bottom: 12px
     &.active span
       background-color: transparent
     &.active span::before
       transform: rotate(45deg)
-      top: 9px
+      top: 18px
     &.active span::after
       transform: rotate(-45deg)
-      bottom: 9px
+      bottom: 18px
 
   &_round
     padding: 0 30px
@@ -94,6 +101,7 @@ input:focus
     -webkit-border-radius: 30px
     -moz-border-radius: 30px
     border-radius: 30px
+    text-align: center
     text-transform: uppercase
     font-family: 'Jost', sans-serif
     font-style: normal

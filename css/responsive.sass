@@ -1,37 +1,355 @@
-@media only screen and (max-width: 1200px)
+@media only screen and (max-width: 1280px)
+  .hero
+    &__title
+      font-size: 76px
+
+  .container_fullHD
+    padding: 0 40px
+
   .header
     &__top
-      &__link
-        font-size: 12px
-    &__navigation
+      padding: 10px 0
       &__list
+        margin-left: 100px
+      &__link
+        font-size: 14px
+      &__top__list
         display: none
+      .header__top__link span
+        font-size: 14px
+
+    &__navigation
+      justify-content: flex-end
+      &__list
+        position: absolute
+        top: 0
+        left: 0
+        right: 0
+        flex-flow: column
+        padding: 60px 20px
+        background-color: $lightGrey
+        margin: 0
+        align-items: flex-start
+        transform: translateY(calc(-100% - 30px))
+        transition: transform 0.4s ease-in-out
+        z-index: 15
+        &.active
+          transform: translateY(0)
       &__controls
         margin-left: 24px
+      &__item_contacts
+        display: unset
+        .contacts__list
+          display: flex
+          flex-flow: column
+          gap: 16px
+
     &__bottom
+      margin-top: -20px
+      align-items: flex-end
       &__burger
         display: flex
 
+  .logo_header
+    flex: 1
+    &__img
+      width: 80px
+
+
   .btn
     &__burger
-     display: flex
+      display: flex
+
+  .sales
+    &__item__text
+      .title_h3
+        font-size: 36px
+      p
+        font-size: 18px
+
+  .footer__top .container
+    padding: 0
+
+
 
 @media only screen and (max-width: 1024px)
   .title
     &_h1
       font-size: 52px
 
+  .container
+    padding: 0 24px
+    &_fullHD
+      padding: 0 24px
+    &_body
+      padding-top: 114px
+
+  .header
+    position: fixed
+    top: 0
+    left: 0
+    right: 0
+    z-index: 40
+    &__top__list
+      .contacts
+        &__item
+          &_address
+            display: none
+          &_phone
+            display: flex
+            column-gap: 16px
+            flex-flow: wrap
+
+    &.shrink
+      .header
+        &__top__list
+          transform: translateY(calc(-100% - 20px))
+        &__bottom
+          margin-top: -56px
+          align-items: center
+      .logo_header__img
+        width: 42px
+
   .hero
     padding-bottom: 0
+
     &__title
       font-size: 64px
+
+  .categories
+    &__list
+      gap: 24px
+      grid-template-rows: repeat(8, 226px)
+    &__item
+      &_1, &_2
+        grid-column: 1 / span 7
+      &_2
+        grid-row: 2
+      &_3
+        grid-column: 8 / span end
+        grid-row: 1 / span 2
+      &_4
+        grid-column: 1 / span 6
+        grid-row: 3 / span 2
+      &_5
+        grid-column: 5/span end
+      &_6
+        grid-column: 5/span end
+      &_7
+        grid-row: 5 / span 2
+        grid-column: 1 / span 4
+      &_8
+        grid-column: 7/span end
+        grid-row: 3
+      &_9
+        grid-column: 7/span end
+        grid-row: 4
+      &_10
+        grid-column: 1 / span 6
+      &_11
+        grid-column: 7 / span 6
+
+      .title_h3
+        font-size: 26px
+
+  .sales
+    &__item
+      &_big
+        max-width: unset
+      &_small
+        max-width: unset
+
+  .footer
+    &__top__wrapper
+      flex-flow: wrap
+      justify-content: space-around
+      text-align: center
+    &__bottom__wrapper
+      flex-flow: column-reverse
 
 @media only screen and (max-width: 864px)
 
 @media only screen and (max-width: 768px)
+  .title
+    &_h2
+      font-size: 44px
+
+  .hero
+    &__title
+      font-size: 56px
+    &__text
+      font-size: 20px
+    &__slider__item
+      padding: 64px 0 72px
+      -webkit-border-radius: 40px
+      -moz-border-radius: 40px
+      border-radius: 40px
+    &__noted
+      font-size: 42px
+      height: 60px
+      -webkit-border-radius: 30px
+      -moz-border-radius: 30px
+      border-radius: 30px
+
+  .advantages
+    &__list
+      gap: 40px
+
+  .categories
+    &__list
+      grid-template-rows: repeat(11, 226px)
+    &__item
+      padding: 28px 32px
+      &_4
+        grid-column: 1 / span end
+      &_5
+        grid-column: 1/span end
+      &_6
+        grid-column: 1/span end
+      &_7
+        grid-row: 7/span 2
+        grid-column: 1/span 5
+      &_8
+        grid-column: 6/span end
+        grid-row: unset
+      &_9
+        grid-column: 6/span end
+        grid-row: unset
+      &_12
+        grid-column: 1 / span 6
+      &_13
+        grid-column: 7 / span end
+      &_14
+        grid-column: 1 / span 6
+      &_15
+        grid-column: 7 / span end
+
 
 @media only screen and (max-width: 640px)
+  .header
+    &__top__list
+      .contacts__item_time
+        display: none
+    &__bottom__burger
+      order: 3
+      justify-content: flex-end
+      flex: 1
+
+  .hero
+    &__text
+      margin-top: 20px
+    &__title
+      font-size: 48px
+    &__slider__item
+      padding: 40px 0 56px
+      -webkit-border-radius: 40px
+      -moz-border-radius: 40px
+      border-radius: 40px
+    &__noted
+      margin-top: 32px
+
+  .advantages
+    &__list
+      flex-flow: column
+    &__item
+      p
+        text-align: justify
+
+  .categories
+    &__list
+      gap: 16px
+      grid-template-rows: repeat(13, 226px)
+    &__item
+      padding: 16px 24px
+      &_7, &_8, &_9, &_10, &_11
+        grid-column: 1/span end
+      &_7
+        grid-row: unset
+      .title_h3
+        font-size: 24px
+
+  .sales
+    &__item
+      &_big, &_small
+        padding: 30px 40px
+        min-width: 280px
+      &_big  .sales__item__text
+        max-width: 80%
+      &__text
+        .title_h3
+          font-size: 32px
+        p
+          font-size: 16px
+
+  .promo
+    &__wrapper
+      padding: 40px 56px
+    .title_h2
+      font-size: 36px
+      text-align: center
 
 @media only screen and (max-width: 480px)
+  .title
+    &_h2
+      font-size: 32px
+
+  .container, .container_fullHD
+    padding: 0 16px
+
+  .container_fullHD
+    padding: 0
+
+  .header
+    &__top__list
+      display: none
+
+  .hero
+    &__text
+      font-size: 18px
+    &__title
+      font-size: 32px
+    &__noted
+      font-size: 36px
+
+  .categories
+    &__list
+      gap: 16px
+      grid-template-rows: repeat(13, 226px)
+    &__item
+      padding: 16px 24px
+      &_double-block
+        padding: 16px
+        gap: 16px
+      .title_h3
+        font-size: 24px
+
+  .promo
+    &__wrapper
+      padding: 32px 24px
+      -webkit-border-radius: 40px
+      -moz-border-radius: 40px
+      border-radius: 40px
+    .title_h2
+      font-size: 32px
+    &__input
+      font-size: 18px
+      &::placeholder
+        font-size: 18px
+
+  .footer__link
+    font-size: 14px
 
 @media only screen and (max-width: 360px)
+  .promo
+    &__wrapper
+      padding: 32px 12px
+    .title_h2
+      font-size: 26px
+
+  .sales
+    &__item
+      &_big, &_small
+        padding: 30px 24px
+      &_big  .sales__item__text
+        max-width: unset
+

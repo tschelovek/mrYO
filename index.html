@@ -35,12 +35,14 @@
             <li class="contacts__item contacts__item_phone">
               <div>
                 <a href="tel:78126796677" class="header__top__link">
-                  +7 (812) 679-66-77 <span>(Невский / Кудрово)</span>
+                  <span class="contacts__item_phone__number">+7 (812) 679-66-77 </span>
+                  <span>(Невский / Кудрово)</span>
                 </a>
               </div>
               <div>
                 <a href="tel:78126796760" class="header__top__link">
-                  +7 (812) 679-67-60 <span>(Мурино)</span>
+                  <span class="contacts__item_phone__number">+7 (812) 679-67-60 </span>
+                  <span>(Мурино)</span>
                 </a>
               </div>
             </li>
@@ -83,11 +85,31 @@
               <li class="header__navigation__item">
                 <a href="#" class="header__navigation__link">Контакты</a>
               </li>
-              <!--              <li class="header__navigation__item">-->
-              <!--                <div class="header__navigation__controls">-->
-
-              <!--                </div>-->
-              <!--              </li>-->
+              <li class="header__navigation__item header__navigation__item_contacts">
+                <ul class="contacts__list">
+                  <li class="contacts__item contacts__item_address">
+                    <div class="header__top__link">СПб, Октябрьская наб. д.34, 6а</div>
+                    <div class="header__top__link">Мурино, ул. Екатерининская, 22 к.1</div>
+                  </li>
+                  <li class="contacts__item contacts__item_phone">
+                    <div>
+                      <a href="tel:78126796677" class="header__top__link">
+                        <span class="contacts__item_phone__number">+7 (812) 679-66-77 </span>
+                        <span>(Невский / Кудрово)</span>
+                      </a>
+                    </div>
+                    <div>
+                      <a href="tel:78126796760" class="header__top__link">
+                        <span class="contacts__item_phone__number">+7 (812) 679-67-60 </span>
+                        <span>(Мурино)</span>
+                      </a>
+                    </div>
+                  </li>
+                  <li class="contacts__item contacts__item_time">
+                    <div class="header__top__link">Пн-Вс: с 12:00 до 00:00</div>
+                  </li>
+                </ul>
+              </li>
             </ul>
 
             <div class="header__navigation__controls">
@@ -217,8 +239,10 @@
                   fill="#EE7F7F"/>
               </g>
             </svg>
-            <h3 class="title_h3">Бесплатная доставка</h3>
-            <p>Быстрая доставка. Мы доставим вам заказ в течение 60 минут</p>
+            <div class="advantages__item__text">
+              <h3 class="title_h3">Бесплатная доставка</h3>
+              <p>Быстрая доставка. Мы доставим вам заказ в течение 60 минут</p>
+            </div>
           </li>
           <li class="advantages__item">
             <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -228,8 +252,10 @@
                   fill="#EE7F7F"/>
               </g>
             </svg>
-            <h3 class="title_h3">Свежие продукты</h3>
-            <p>Используем для приготовления только самые качественные и свежие ингредиенты</p>
+            <div class="advantages__item__text">
+              <h3 class="title_h3">Свежие продукты</h3>
+              <p>Используем для приготовления только самые качественные и свежие ингредиенты</p>
+            </div>
           </li>
           <li class="advantages__item">
             <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -239,8 +265,10 @@
                   fill="#EE7F7F"/>
               </g>
             </svg>
-            <h3 class="title_h3">Работают профессионалы</h3>
-            <p>Работа с лучшими суши-мастерами и шеф-поварами</p>
+            <div class="advantages__item__text">
+              <h3 class="title_h3">Работают профессионалы</h3>
+              <p>Работа с лучшими суши-мастерами и шеф-поварами</p>
+            </div>
           </li>
         </ul>
       </div>
@@ -604,10 +632,16 @@
               </li>
               <li class="contacts__item contacts__item_phone">
                 <div>
-                  <a href="tel:78126796677" class="footer__link">+7 (812) 679-66-77 <span>(Невский / Кудрово)</span></a>
+                  <a href="tel:78126796677" class="footer__link">
+                    <span class="contacts__item_phone__number">+7 (812) 679-66-77 </span>
+                    <span>(Невский / Кудрово)</span>
+                  </a>
                 </div>
                 <div>
-                  <a href="tel:78126796760" class="footer__link">+7 (812) 679-67-60 <span>(Мурино)</span></a>
+                  <a href="tel:78126796760" class="footer__link">
+                    <span class="contacts__item_phone__number">+7 (812) 679-67-60 </span>
+                    <span>(Мурино)</span>
+                  </a>
                 </div>
               </li>
               <li class="contacts__item contacts__item_email">

@@ -4,12 +4,14 @@
     background-color: $lightGrey
     border-bottom-left-radius: 80px
     border-bottom-right-radius: 80px
+    min-height: 60px
     &__list
       margin-left: 168px
       display: flex
       justify-content: space-between
       gap: 20px
-    &__link, .header__top__link span
+      transition: transform 0.5s
+    &__link
       font-family: 'Jost', sans-serif
       font-style: normal
       font-weight: 300
@@ -20,6 +22,7 @@
     margin-top: -60px
     display: flex
     align-items: baseline
+    transition: all 0.5s
     &__burger
       flex: 2
       display: none
@@ -46,10 +49,12 @@
       display: flex
       align-items: center
       gap: 16px
+    &__item_contacts
+      display: none
   &__search
     &__btn
       padding: 8px 16px
-      background-color: white
+      background-color: transparent
       &:hover
         svg path
           fill: $darkBlue
@@ -85,12 +90,14 @@
     line-height: 20px
     letter-spacing: 0.08em
     text-transform: uppercase
+    white-space: nowrap
 
 .logo
   &_header
     overflow: hidden
     &__img
       max-width: 100%
+      transition: width 0.5s
 
 .contacts
   &__item
@@ -107,8 +114,9 @@
       &::before
         content: url("../images/icons/mail.svg")
     &_phone
-      .header__top__link
+      &__number
         font-weight: 400
+        white-space: nowrap
       &::before
         content: url("../images/icons/phone.svg")
     &_time
