@@ -55,7 +55,6 @@
     &__img
       width: 80px
 
-
   .btn
     &__burger
       display: flex
@@ -117,6 +116,7 @@
       font-size: 64px
 
   .categories
+    padding: 20px 0 80px
     &__list
       gap: 24px
       grid-template-rows: repeat(8, 226px)
@@ -153,6 +153,7 @@
         font-size: 26px
 
   .sales
+    padding: 60px 0 80px
     &__item
       &_big
         max-width: unset
@@ -247,10 +248,15 @@
       border-radius: 40px
     &__noted
       margin-top: 32px
+    .swiper-pagination-bullet
+      width: 20px
+      &-active
+        width: 42px
 
   .advantages
     &__list
       flex-flow: column
+      gap: 16px
     &__item
       p
         text-align: justify
@@ -340,6 +346,9 @@
     font-size: 14px
 
 @media only screen and (max-width: 360px)
+  .container
+    padding: 0 8px
+
   .promo
     &__wrapper
       padding: 32px 12px

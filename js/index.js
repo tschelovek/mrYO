@@ -20,7 +20,7 @@ document.addEventListener('DOMContentLoaded', () => {
    *
    * Бургер меню
    */
-  document.getElementById('burgerButton')?.addEventListener('click', (e) => {
+  document.getElementById('burgerButton')?.addEventListener('click', e => {
     e.preventDefault();
     e.currentTarget.classList.toggle('active');
     document.querySelector('.header__navigation__list')?.classList.toggle('active');
@@ -29,7 +29,7 @@ document.addEventListener('DOMContentLoaded', () => {
   /**
    * Скукоживатель шапки при прокрутке
    */
-  window.addEventListener('scroll', (e) => {
+  window.addEventListener('scroll', () => {
     const header = document.body.querySelector('header');
     if(window.scrollY > 0) {
       !header.classList.contains('shrink') ? header.classList.add('shrink') : null
