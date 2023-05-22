@@ -535,6 +535,9 @@ input:focus {
 .categories__item:hover {
   box-shadow: 0px 4px 8px 0px #e0e0e0;
 }
+.categories__item_with-sticker .title_h3 {
+  margin-top: 28px;
+}
 .categories__item__sticker {
   padding: 12px 10px 12px 20px;
   position: absolute;
@@ -587,6 +590,9 @@ input:focus {
 }
 .categories__item__link__wrapper_blue {
   background-color: #093753;
+}
+.categories__item__link__wrapper_blue .categories__item__link .title_h3 {
+  color: white;
 }
 .categories__item__link__wrapper_pink {
   background-color: #EE7F7F;
@@ -670,6 +676,9 @@ input:focus {
 .categories__item_4 {
   grid-column: 8/13;
   grid-row: 1/span 2;
+}
+.categories__item_4_1, .categories__item_4_2 {
+  grid-column: 8/span end;
 }
 .categories__item_5 {
   grid-column: 1/span 6;
@@ -1068,6 +1077,9 @@ input:focus {
     grid-column: 1/span 6;
     grid-row: 3/span 2;
   }
+  .categories__item_4_1, .categories__item_4_2 {
+    grid-column: 1/span 6;
+  }
   .categories__item_5 {
     grid-column: 5/span end;
   }
@@ -1145,7 +1157,7 @@ input:focus {
   .categories__item {
     padding: 28px 32px;
   }
-  .categories__item_4 {
+  .categories__item_4, .categories__item_4_1, .categories__item_4_2 {
     grid-column: 1/span end;
   }
   .categories__item_5 {

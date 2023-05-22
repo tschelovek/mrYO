@@ -117,6 +117,8 @@
     transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out
     &:hover
       box-shadow: 0px 4px 8px 0px #e0e0e0
+    &_with-sticker .title_h3
+      margin-top: 28px
     &__sticker
       padding: 12px 10px 12px 20px
       position: absolute
@@ -163,7 +165,9 @@
         transition: background-color 0.3s ease-in-out
         overflow: hidden
         &_blue
-            background-color: $darkBlue
+          background-color: $darkBlue
+          .categories__item__link .title_h3
+            color: white
         &_pink
           background-color: $pink
           &:hover
@@ -230,6 +234,8 @@
     &_4
       grid-column: 8 / 13
       grid-row: 1 / span 2
+      &_1, &_2
+        grid-column: 8 / span end
     &_5
       grid-column: 1 / span 6
       .categories__item__inner
