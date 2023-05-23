@@ -128,27 +128,24 @@
       &_3
         grid-column: 8 / span end
         grid-row: 1 / span 2
-      &_4
+      &_4, &_5
         grid-column: 1 / span 6
-        grid-row: 3 / span 2
-        &_1, &_2
-          grid-column: 1 / span 6
-      &_5
-        grid-column: 5/span end
       &_6
         grid-column: 5/span end
       &_7
+        grid-column: 5/span end
+      &_8
         grid-row: 5 / span 2
         grid-column: 1 / span 4
-      &_8
-        grid-column: 7/span end
-        grid-row: 3
       &_9
         grid-column: 7/span end
-        grid-row: 4
+        grid-row: 3
       &_10
-        grid-column: 1 / span 6
+        grid-column: 7/span end
+        grid-row: 4
       &_11
+        grid-column: 1 / span 6
+      &_12
         grid-column: 7 / span 6
 
       .title_h3
@@ -200,34 +197,29 @@
 
   .categories
     &__list
-      grid-template-rows: repeat(11, 226px)
+      grid-template-rows: unset
+      grid-auto-rows: 226px
     &__item
       padding: 28px 32px
-      &_4, &_4_1, &_4_2
+      &_4, &_5, &_6, &_7
         grid-column: 1 / span end
-      &_5
-        grid-column: 1/span end
-      &_6
-        grid-column: 1/span end
-      &_7
+      &_8
         grid-row: 7/span 2
         grid-column: 1/span 5
-      &_8
-        grid-column: 6/span end
-        grid-row: unset
       &_9
         grid-column: 6/span end
         grid-row: unset
-      &_12
-        grid-column: 1 / span 6
+      &_10
+        grid-column: 6/span end
+        grid-row: unset
       &_13
-        grid-column: 7 / span end
-      &_14
         grid-column: 1 / span 6
-      &_15
+      &_14
         grid-column: 7 / span end
-      &_double-block
-        padding: 0
+      &_15
+        grid-column: 1 / span 6
+      &_16
+        grid-column: 7 / span end
 
 @media only screen and (max-width: 640px)
   .header
@@ -267,13 +259,14 @@
   .categories
     &__list
       gap: 16px
-      grid-template-rows: repeat(13, 226px)
     &__item
       padding: 16px 24px
-      &_7, &_8, &_9, &_10, &_11
+      &_7, &_8, &_9, &_10, &_11, &_12
         grid-column: 1/span end
       &_7
         grid-row: unset
+      &_8
+        grid-row: span 1
       .title_h3
         font-size: 24px
 
@@ -323,8 +316,6 @@
   .categories
     &__list
       gap: 16px
-      grid-template-rows: unset
-      grid-auto-rows: 226px
     &__item
       padding: 16px 24px
       &_1, &_2
@@ -332,8 +323,6 @@
       &_3
         grid-column: 1/span end
         grid-row: unset
-      &_4
-        grid-row: span 2
       &_double-block
         padding: 0
         gap: 16px
