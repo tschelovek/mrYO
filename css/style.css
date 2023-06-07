@@ -674,7 +674,7 @@ input:focus {
   grid-row: 1/span 2;
 }
 .categories__item_4, .categories__item_5 {
-  grid-column: 8/span end;
+  grid-column: 8/span 5;
 }
 .categories__item_6 {
   grid-column: 1/span 6;
